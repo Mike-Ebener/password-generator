@@ -1,5 +1,22 @@
 
-// Assignment code here
+// DOM elements
+
+/* //var password = //
+  var lowerEl = (checkCase)
+  //var upperEl = checkCase (false)//
+  var numberEl = (checkNumber)
+  var lengthEl = (checkLength)
+
+var randomFunction = {
+
+  lower: getlowerRandom,
+  upper: getupperRandom,
+  number: getnumberRandom,
+  symbol getsymbolRandom,
+}
+
+
+*/
 
 
 // Get references to the #generate button element in html
@@ -31,7 +48,24 @@ generateBtn.addEventListener("click", writePassword);
 
 
 
-// list
+// notes
 
+//console.log(Math.floor(Math.random() * 26) + 97)
 
+/* function lowerRandom() {
+return String.fromCharCode(Math.floor(Math.random() * 26) + 97);
+}
 
+function upperRandom ()  {
+return String.fromCharCode(Math.floor(Math.random() * 26) + 65);
+}
+
+function numberRandom ()  {
+return String.fromCharCode(Math.floor(Math.random() * 26) + 48);
+}
+
+function symbolRandom ()  {
+    var symbols = ".,<>)(*&^%$#@!.,"
+return symbols[Math.floor(Math.random() * symbols.length)]
+
+*/
