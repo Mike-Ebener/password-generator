@@ -1,75 +1,37 @@
+
 // Assignment code here
-//Added
 
-var capitalLetters = confirm ("Do you want capital letters?");
 
-if (capitalLetters) { 
-  alert ("Your password may contain capital letters");
-}
-else{
-  alert ("Your password will contain only lower case letters");
+// Get references to the #generate button element in html
+var generateBtn = document.querySelector("#generate");
+var generatePassword = function() {
 
-return capitalLetters;
-}
-
-var symbolsAllowed = confirm ("Do you want to use symbols?")
-
-if (symbolsAllowed) {
-  alert("Your password may contain symbols")
-}
-else {
-  alert("Your password will not contain symbols")
+var checkCase = window.confirm ("Do you want to use capital letters?");
+  console.log (checkCase);
+var checkSymbol = window.confirm ("Do you want to use special symbols?");
+  console.log (checkSymbol);
+var checkNumber = window.confirm ("Do you want to use numbers?");
+  console.log (checkNumber);
+var checkLength = window.prompt ("How many characters would you like your password to be (between 8-128)?");
+  console.log (checkLength);
 }
 
 
-
-
-
-
-
-// Get references to the #generate element (existing)
-//var generateBtn = document.querySelector("#generate"); 
-
-
-
-
-
-// Write password to the #password input (existing)
-/*function writePassword() {
+// Write password to the #password input
+function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
 
-}*/
+}
 
-// Add event listener to generate button (existing)
-//generateBtn.addEventListener("click", writePassword); 
-
-
-//Function to alert when button is clicked //
-
-
-// var x = window.confirm("Do you want capital letters?")
-  // confirm capital true or false (I added)
-/*var capitalLetters = function () {
-  var capital = "";
-  capital = true;
-window.confirm("Do you want capital letters?");
-return capital;
-
-}*/
-
-
-// var x = window.confirm("Do you want to use symbols?")
-  //confirm symbols true or false
-// var x = prompt("Choose a password length between 8 & 120")
-  //log the number of characters
+// Add event listener to generate button
+generateBtn.addEventListener("click", writePassword);
 
 
 
-//alerts to reference including case, symbols & length
-
+// list
 
 
 
