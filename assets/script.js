@@ -1,22 +1,24 @@
 
 // DOM elements //
+/*
+//var password = //
+  var lowerEl = (checkCase());
+  var numberEl = (checkNumber());
+  var lengthEl = (checkLength());
+  var symbolEl = (checkSymbol());
 
-/* //var password = //
-  var lowerEl = (checkCase)
-  //var upperEl = checkCase (false)//
-  var numberEl = (checkNumber)
-  var lengthEl = (checkLength)
+  
 
 var randomFunction = {
 
   lower: getlowerRandom,
   upper: getupperRandom,
   number: getnumberRandom,
-  symbol getsymbolRandom,
+  symbol: getsymbolRandom
 }
-
-
 */
+
+
 
 
 // Get references to the #generate button element in html
@@ -44,15 +46,21 @@ function writePassword() {
 }
 
 // Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+generateBtn.addEventListener("click", writePassword); {
+
+  var length = +lengthEl.value
+  var isLower = lowerEl.checked
+  var isUpper = lowerEl.checked
+  var isNumber = numberEl.checked
+  var isSymbol = symbolEl.checked
+
+}
 
 
 
-// notes
+// Math functions
 
-//console.log(Math.floor(Math.random() * 26) + 97)
-
-/* function lowerRandom() {
+ function lowerRandom() {
 return String.fromCharCode(Math.floor(Math.random() * 26) + 97);
 }
 
@@ -67,5 +75,4 @@ return String.fromCharCode(Math.floor(Math.random() * 26) + 48);
 function symbolRandom ()  {
     var symbols = ".,<>)(*&^%$#@!.,"
 return symbols[Math.floor(Math.random() * symbols.length)]
-
-*/
+}
