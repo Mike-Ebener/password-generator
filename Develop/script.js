@@ -1,5 +1,5 @@
 
-// DOM elements
+// DOM elements //
 
 /* //var password = //
   var lowerEl = (checkCase)
